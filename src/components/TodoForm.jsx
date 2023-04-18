@@ -24,17 +24,19 @@ function TodoForm({ addTodo }) {
   };
 
   return (
-    <div>
+    <div className="p-3 d-flex justify-content-center">
       <form onSubmit={handleSubmit}>
         <input
           type="text"
           name="text"
           onChange={handleChange}
-          placeholder="Add a todo"
+          placeholder="Add your todo here..."
           value={todoInput}
           ref={inputRef}
         />
-        <button>Add your todo</button>
+        <button className="ms-3 btn btn-primary" type="submit">
+          Add todo
+        </button>
       </form>
     </div>
   );

@@ -32,13 +32,15 @@ function TodoList() {
 
   return (
     <>
-      <h1>Today's Todos</h1>
-      <TodoForm addTodo={addTodo} />
-      <TodoItem
-        todos={todos}
-        completeTodo={completeTodo}
-        deleteTodo={deleteTodo}
-      />
+      <div className="d-flex flex-column">
+        <h1 className="h1">Today's Todos</h1>
+        <TodoForm addTodo={addTodo} />
+        <TodoItem
+          todos={todos}
+          completeTodo={completeTodo}
+          deleteTodo={deleteTodo}
+        />
+      </div>
     </>
   );
 }
