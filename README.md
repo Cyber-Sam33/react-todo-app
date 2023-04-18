@@ -27,6 +27,6 @@ JSX
 bootstrap
 react-icons
 
-## Screenshots
+## Screenshot
 
-!["Screenshot of Todo"](https://github.com/Cyber-Sam33/react-todo-app/tree/main/src/docs/homepage.png)
+!["Screenshot of Todo"](https://github.com/Cyber-Sam33/react-todo-app/blob/main/src/docs/homepage.png)
