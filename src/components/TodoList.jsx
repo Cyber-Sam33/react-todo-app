@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import TodoForm from "./TodoForm";
+import TodoItem from "./TodoItem";
 
 function TodoList() {
   const [todos, setTodos] = useState([]);
@@ -14,10 +15,30 @@ function TodoList() {
     console.log("Array of todos", todos);
   };
 
+  const deleteTodo = (id) => {
+    const deleted = [...todos].filter((todo) => todo.id !== id);
+    setTodos(deleted);
+  };
+
+  const completeTodo = (id) => {
+    let completedTodos = todos.map((todo) => {
+      if (todo.id === id) {
+        todo.isComplete = !todo.isComplete;
+      }
+      return todo;
+    });
+    setTodos(completedTodos);
+  };
+
   return (
     <>
       <h1>Today's Todos</h1>
       <TodoForm addTodo={addTodo} />
+      <TodoItem
+        todos={todos}
+        completeTodo={completeTodo}
+        deleteTodo={deleteTodo}
+      />
     </>
   );
 }
