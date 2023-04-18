@@ -29,4 +29,4 @@ react-icons
 
 ## Screenshots
 
-!["Screenshot of Todo"]
+!["Screenshot of Todo"](https://github.com/Cyber-Sam33/react-todo-app/tree/main/src/docs)
